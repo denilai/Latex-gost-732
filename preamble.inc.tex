@@ -13,6 +13,7 @@ urlcolor=black,linkcolor=black, anchorcolor=black,
 citecolor=black, menucolor=black, filecolor=black,
 ]{hyperref}
 
+%Величина «красной строки»
 
 
 \usepackage[tableposition=top,singlelinecheck=false]{caption}
@@ -25,7 +26,7 @@ citecolor=black, menucolor=black, filecolor=black,
 \DeclareCaptionLabelFormat{continued}{Продолжение таблицы~#2}
 \captionsetup*[ContinuedFloat]{labelformat=continued}
 \captionsetup{labelsep=gost}
-\captionsetup*[figure]{labelformat=gostfigure, justification=centering,font={small}}  % выравнивание по центру
+\captionsetup*[figure]{labelformat=gostfigure, justification=centering,font={small, bf}}  % выравнивание по центру
 \captionsetup*[table]{hangindent=-10pt, indention=0pt,parindent=0pt,margin=0pt,labelformat=gosttable,justification=raggedright,font={small,it}}
 \captionsetup*[lstlisting]{font={small, it}}
 

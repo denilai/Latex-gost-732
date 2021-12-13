@@ -16,20 +16,28 @@
   ---
 \newblock Издательский дом Вильямс, 2004.
 
-\bibitem{yurt2011dev}
-\selectlanguageifdefined{english}
-\BibEmph{Юртанова,~Екатерина~Михайловна}.
-  Разработка Web-приложений с использованием
-  языка PHP~/ Екатерина~Михайловна~Юртанова~//
-  \BibEmph{Учебный эксперимент в образовании}.
-  ---
-\newblock no.~1.
-
 \bibitem{baldinLatex}
 \selectlanguageifdefined{english}
 \BibEmph{Балдин,~Евгений~Михайлович}.
   Компьютерная типография LaTeX~/
   Евгений~Михайлович~Балдин. ---
 \newblock Evgeny Baldin, 2008.
+
+\bibitem{converse2004php5}
+\selectlanguageifdefined{english}
+\BibEmph{Converse,~Tim}. PHP5 and MySQL bible~/ Tim~Converse, Joyce~Park,
+  Clark~Morgan. ---
+\newblock John Wiley \& Sons, 2004. ---
+\newblock Vol.~147.
+
+\bibitem{yurt2011dev}
+\selectlanguageifdefined{russian}
+\BibEmph{Юртанова,~Екатерина~Михайловна}.
+  Разработка Web-приложений с использованием
+  языка PHP~/ Екатерина~Михайловна~Юртанова~//
+  \BibEmph{Учебный эксперимент в образовании}.
+  ---
+\newblock 2011. ---
+\newblock {С.}~47--50.
 
 \end{thebibliography}

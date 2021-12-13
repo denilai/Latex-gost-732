@@ -30,7 +30,7 @@
 
 \tableofcontents
 
-\include{10-defines}
+%\include{10-defines}
 \include{11-abbrev}
 
 \include{12-intro}
@@ -38,10 +38,13 @@
 \mainmatter % это включает нумерацию глав и секций в документе ниже
 
 \include{model-erassistant}
+\clearpage
 \include{model-datamodeler}
-\include{30-design}
-\include{40-impl}
-\include{50-research}
+\clearpage
+\include{sql-cli}
+\clearpage
+\include{web-client}
+%\cite{d2004mysql},\cite{baldinLatex}, \cite{converse2004php5}, \cite{yurt2011dev}.
 
 \backmatter %% Здесь заканчивается нумерованная часть документа и начинаются ссылки и
             %% заключение
@@ -51,9 +54,9 @@
 \include{81-biblio}
 
 \appendix   % Тут идут приложения
-
-\include{90-appendix1}
-\include{91-appendix2}
+%
+%\include{90-appendix1}
+%\include{91-appendix2}
 
 \end{document}
 
