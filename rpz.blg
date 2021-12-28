@@ -1,65 +1,52 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: rpz.aux
-A level-1 auxiliary file: 11-abbrev.aux
-A level-1 auxiliary file: 12-intro.aux
-A level-1 auxiliary file: model-erassistant.aux
-A level-1 auxiliary file: model-datamodeler.aux
-A level-1 auxiliary file: sql-cli.aux
-A level-1 auxiliary file: web-client.aux
+A level-1 auxiliary file: course-scheme/abbrev.aux
+A level-1 auxiliary file: course-scheme/intro.aux
+A level-1 auxiliary file: course-scheme/analiz-syncro.aux
+A level-1 auxiliary file: course-scheme/struct-design.aux
 A level-1 auxiliary file: 80-conclusion.aux
-A level-1 auxiliary file: 81-biblio.aux
+A level-1 auxiliary file: course-scheme/81-biblio.aux
 The style file: gost780u.bst
-Database file #1: rpz.bib
-I was expecting a `,' or a `}'---line 30 of file rpz.bib
- :    
- :    % language =     "russian"
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 38 of file rpz.bib
- :     
- :     %language =     "russian"
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
+Database file #1: course-scheme/rpz.bib
 You've used 4 entries,
             2674 wiz_defined-function locations,
-            668 strings with 6034 characters,
-and the built_in function-call counts, 1160 in all, are:
-= -- 151
+            672 strings with 6573 characters,
+and the built_in function-call counts, 1575 in all, are:
+= -- 221
 > -- 24
-< -- 4
+< -- 8
 + -- 10
 - -- 6
-* -- 46
-:= -- 134
-add.period$ -- 14
+* -- 86
+:= -- 172
+add.period$ -- 18
 call.type$ -- 4
 change.case$ -- 0
 chr.to.int$ -- 0
 cite$ -- 4
-duplicate$ -- 60
-empty$ -- 137
+duplicate$ -- 77
+empty$ -- 150
 format.name$ -- 10
-if$ -- 313
+if$ -- 416
 int.to.chr$ -- 0
 int.to.str$ -- 4
 missing$ -- 0
-newline$ -- 32
+newline$ -- 36
 num.names$ -- 8
-pop$ -- 31
+pop$ -- 25
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 25
+skip$ -- 45
 stack$ -- 0
-substring$ -- 24
-swap$ -- 35
-text.length$ -- 0
+substring$ -- 83
+swap$ -- 61
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 7
+while$ -- 13
 width$ -- 5
-write$ -- 71
-(There were 2 error messages)
+write$ -- 84

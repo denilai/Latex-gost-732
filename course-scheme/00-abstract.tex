@@ -1,24 +1,27 @@
 % Также можно использовать \Referat, как в оригинале
 \begin{abstract}
 	
+
+	\newcounter{totfigures}
+	\newcounter{tottables}
+	\makeatletter
+	\AtEndDocument{%
+		\addtocounter{totfigures}{\value{figure}}%
+		\addtocounter{tottables}{\value{table}}%
+		\immediate\write\@mainaux{%
+			\string\gdef\string\totfig{\number\value{totfigures}}%
+			\string\gdef\string\tottab{\number\value{tottables}}%    
+		}%
+	}
+	\makeatother
 	
-	Отчет содержит \pageref{LastPage}\,стр.%
-	\ifnum \totfig >0
-	, \totfig~рис.%
-	\fi
-	\ifnum \tottab >0
-	, \tottab~табл.%
-	\fi
-	%
-	\ifnum \totbib >0
-	, \totbib~источн.%
-	\fi
-	%
-	\ifnum \totapp >0
-	, \totapp~прил.%
-	\else
-	.%
-	\fi
+	
+	\pretocmd{\chapter}{\addtocounter{totfigures}{\value{figure}}}{}{}
+	\pretocmd{\chapter}{\addtocounter{tottables}{\value{table}}}{}{}
+	% ...
+	Дипломная работа: \pageref*{LastPage}~с., \totfig~рис., \tottab~табл...
+	
+
 	
 Это пример каркаса расчётно-пояснительной записки, желательный к использованию в РПЗ проекта по курсу РСОИ.
 

@@ -7,37 +7,45 @@
 \ifx\undefined\BibAnnote\long\def\BibAnnote#1{}\else\fi
 \ifx\undefined\BibEmph\def\BibEmph#1{\emph{#1}}\else\fi
 
-\bibitem{d2004mysql}
-\selectlanguageifdefined{english}
-\BibEmph{Дюбуа,~Поль}. MySQL: Полн. и исчерпывающее
-  руководство по применению и
-  администрированию баз данных MySQL 4, а также
-  программированию приложений~/ Поль~Дюбуа.
-  ---
-\newblock Издательский дом Вильямс, 2004.
-
-\bibitem{baldinLatex}
-\selectlanguageifdefined{english}
-\BibEmph{Балдин,~Евгений~Михайлович}.
-  Компьютерная типография LaTeX~/
-  Евгений~Михайлович~Балдин. ---
-\newblock Evgeny Baldin, 2008.
-
-\bibitem{converse2004php5}
-\selectlanguageifdefined{english}
-\BibEmph{Converse,~Tim}. PHP5 and MySQL bible~/ Tim~Converse, Joyce~Park,
-  Clark~Morgan. ---
-\newblock John Wiley \& Sons, 2004. ---
-\newblock Vol.~147.
-
-\bibitem{yurt2011dev}
+\bibitem{goncharovskyMaj}
 \selectlanguageifdefined{russian}
-\BibEmph{Юртанова,~Екатерина~Михайловна}.
-  Разработка Web-приложений с использованием
-  языка PHP~/ Екатерина~Михайловна~Юртанова~//
-  \BibEmph{Учебный эксперимент в образовании}.
-  ---
-\newblock 2011. ---
-\newblock {С.}~47--50.
+\BibEmph{Гончаровский,~Олег~Владленович}.
+  МАЖОРИТАРНАЯ СХЕМА С НЕСКОЛЬКИМИ
+  ДОМЕНАМИ СИНХРОНИЗАЦИИ~/
+  Олег~Владленович~Гончаровский,
+  Сергей~Феофентович~Тюрин~// \BibEmph{Вестник
+  Воронежского государственного
+  университета. Серия: Системный анализ и
+  информационные технологии}. ---
+\newblock 2017. ---
+\newblock {№}~2. ---
+\newblock {С.}~57--60.
+
+\bibitem{ushenina}
+\selectlanguageifdefined{russian}
+\BibEmph{Ушенина,~Инна}. Использование
+  временных ограничений PERIOD и OFFSET при
+  проектировании цифровых устройств на
+  ПЛИС фирмы Xilinx~/ Инна~Ушенина~//
+  \BibEmph{Компоненты и технологии}. ---
+\newblock 2013. ---
+\newblock {№}~5. ---
+\newblock {С.}~97--106.
+
+\bibitem{hata2012fpga}
+\selectlanguageifdefined{english}
+\BibEmph{Hata,~Hisashi}. FPGA implementation of metastability-based true random
+  number generator~/ Hisashi~Hata, Shuichi~Ichikawa~// \BibEmph{IEICE
+  TRANSACTIONS on Information and Systems}. ---
+\newblock 2012. ---
+\newblock Vol.~95, no.~2. ---
+\newblock Pp.~426--436.
+
+\bibitem{cummings2002simulation}
+\selectlanguageifdefined{english}
+\BibEmph{Cummings,~Clifford~E}. Simulation and synthesis techniques for
+  asynchronous FIFO design~/ Clifford~E~Cummings~// SNUG 2002 (Synopsys Users
+  Group Conference, San Jose, CA, 2002) User Papers. ---
+\newblock 2002.
 
 \end{thebibliography}
