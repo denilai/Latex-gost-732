@@ -4,6 +4,7 @@
 \documentclass[utf8x]{G7-32} % Стиль (по умолчанию будет 14pt)
 \usepackage[T2A]{fontenc}
 \usepackage[russian]{babel}
+\setcounter{page}{4}
 % Остальные стандартные настройки убраны в preamble.inc.tex.
 \include{preamble.inc}
 
@@ -17,7 +18,7 @@
 
 \begin{document}
 
-\frontmatter % выключает нумерацию ВСЕГО; здесь начинаются ненумерованные главы: реферат, введение, глоссарий, сокращения и прочее.
+ % выключает нумерацию ВСЕГО; здесь начинаются ненумерованные главы: реферат, введение, глоссарий, сокращения и прочее.
 
 % Команды \breakingbeforechapters и \nonbreakingbeforechapters
 % управляют разрывом страницы перед главами.
@@ -27,8 +28,9 @@
 % \breakingbeforechapters
 
 %\include{00-abstract}
-
+\thispagestyle{empty}
 \tableofcontents
+\frontmatter
 
 %\include{10-defines}
 \include{course-scheme/abbrev}
@@ -39,7 +41,7 @@
 
 \include{course-scheme/analiz-syncro}
 \clearpage
-\include{model-datamodeler}
+\include{course-scheme/struct-design}
 \clearpage
 \include{sql-cli}
 \clearpage

@@ -138,13 +138,13 @@
 
 % Уменьшено --- Seva
 % \newlength\GostAfterTitleSkip    \setlength\GostAfterTitleSkip    {3.2ex}%15mm}
-\newlength\GostAfterTitleSkip    \setlength\GostAfterTitleSkip    {5mm}
+\newlength\GostAfterTitleSkip    \setlength\GostAfterTitleSkip    {10mm}
 
 \newlength\GostBetweenTitleSkip  \setlength\GostBetweenTitleSkip  {1.8ex}%8mm}
 
 % Увеличено --- Seva
-% \newlength\GostBeforTitleSkip    \setlength\GostBeforTitleSkip    {1.8ex}%\GostAfterTitleSkip}
-\newlength\GostBeforTitleSkip    \setlength\GostBeforTitleSkip    {10mm}%\GostAfterTitleSkip}
+% \newlength\GostBeforTitleSkip    \setlength\GostaTitleSkip    {1.8ex}%\GostAfterTitleSkip}
+\newlength\GostBeforTitleSkip    \setlength\GostBeforTitleSkip    {15mm}%\GostAfterTitleSkip}
 \newlength\GostBeforNoTitleSkip  \setlength\GostBeforNoTitleSkip  {1.0ex}
 \newlength\GostHTitleSpace       \setlength\GostHTitleSpace       {2mm}
 \newlength\GostTitleIndent       \setlength\GostTitleIndent       {\parindent}
@@ -155,7 +155,7 @@
  \addtolength\Gost@TitleDropSkip{-\GostAfterTitleSkip}
 %  стиль всех заголовков, \normalfont оставлен
 \newcommand\GostTitleStyle{\normalfont\bfseries}
-\newcommand\Gost@MainChapterStyle{}
+\newcommand\Gost@MainChapterStyle{\fontsize{18}{16pt}\selectfont}
 \newcommand\Gost@ChapterStyle{\Gost@MainChapterStyle}
 
 %  Раздел
@@ -183,7 +183,7 @@
 \newcommand\section{%
  \@startsection{section}{1}%
  {\GostTitleIndent}{\GostBeforTitleSkip}{\GostAfterTitleSkip}%
- {\GostTitleStyle\large}%
+ {\GostTitleStyle\fontsize{16}{16pt}\selectfont}%
 }
 \newcommand{\asubpart}[2]{\section{#2\label{#1}}}
 
@@ -194,7 +194,7 @@
 \newcommand\subsection{%
  \@startsection{subsection}{2}%
  {\GostTitleIndent}{\GostBeforTitleSkip}{\GostAfterTitleSkip}%
- {\GostTitleStyle}%
+ {\GostTitleStyle\fontsize{14}{16pt}\selectfont}%
 }
 \newcommand{\apara}[2]{\subsection{#2\label{#1}}}
 %  ... не попадающий в оглавление
@@ -317,10 +317,10 @@
 \newcommand{\labelitemi}{---}
 
 %  нумерованные перечисления
-\renewcommand\theenumi {\asbuk{enumi}}
+\renewcommand\theenumi {\arabic{enumi}}
 \renewcommand\theenumii{\arabic{enumii}}
-\newcommand\labelenumi{\theenumi)}
-\newcommand\labelenumii{\theenumii)}
+\newcommand\labelenumi{\theenumi.}
+\newcommand\labelenumii{\theenumii.}
 \renewcommand\p@enumii{\theenumi}
 
 %  ссылка на нумерованное перечисление
@@ -480,8 +480,8 @@
 %  введение, обозначения
 \newcommand\frontmatter{%
  \setcounter{secnumdepth}{-1}%
- \renewcommand\Gost@ChapterStyle{\centering}%
- \setlength\Gost@ChapterIndent{0mm}%
+ \renewcommand\Gost@ChapterStyle{\Gost@MainChapterStyle}%
+ \setlength\Gost@ChapterIndent{\Gost@MainChapterIndent}%
 }
 %  основная часть
 \newcommand\mainmatter{
@@ -492,8 +492,8 @@
 %  заключение, библиография
 \newcommand\backmatter{
  \setcounter{secnumdepth}{-1}
- \renewcommand\Gost@ChapterStyle{\centering}%
- \setlength\Gost@ChapterIndent{0mm}%
+ \renewcommand\Gost@ChapterStyle{\Gost@MainChapterStyle}%
+ \setlength\Gost@ChapterIndent{\Gost@MainChapterIndent}%
 }
 
 %всякие оглавления
