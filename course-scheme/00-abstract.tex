@@ -1,25 +1,18 @@
 % Также можно использовать \Referat, как в оригинале
 \begin{abstract}
+	Суть курсовой работы заключается в анализе проблематики разработки мультисинхронных цифровых устройств, разработке и реализации устройства для ресинхронизации данных, передаваемых из одного домена синхронизации цифрового устройства в другой
+	
+	
+	
+	Работа состоит из пояснительной записки и графической части. Графическая часть представляет описание программного продукта. 
+	
+	Пояснительная записка содержит 3 раздела
 	
 
-	\newcounter{totfigures}
-	\newcounter{tottables}
-	\makeatletter
-	\AtEndDocument{%
-		\addtocounter{totfigures}{\value{figure}}%
-		\addtocounter{tottables}{\value{table}}%
-		\immediate\write\@mainaux{%
-			\string\gdef\string\totfig{\number\value{totfigures}}%
-			\string\gdef\string\tottab{\number\value{tottables}}%    
-		}%
-	}
-	\makeatother
 	
+	Работу выполнил студент группы ИВБО-02-19 Денисов К.Ю. Руководитель --- Тарасов И.Е.
 	
-	\pretocmd{\chapter}{\addtocounter{totfigures}{\value{figure}}}{}{}
-	\pretocmd{\chapter}{\addtocounter{tottables}{\value{table}}}{}{}
-	% ...
-	Дипломная работа: \pageref*{LastPage}~с., \totfig~рис., \tottab~табл...
+	 Работа содержит \pageref*{LastPage}~страницы, использованы \totref~источников, содержит \totfig~рисунков, \tottab~таблицу.
 	
 
 	

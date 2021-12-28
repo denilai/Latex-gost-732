@@ -48,4 +48,20 @@
   Group Conference, San Jose, CA, 2002) User Papers. ---
 \newblock 2002.
 
+\bibitem{tarasov2011}
+\selectlanguageifdefined{russian}
+\BibEmph{Тарасов,~Илья~Евгеньевич}. Язык
+  описания аппаратуры Verilog~/
+  Илья~Евгеньевич~Тарасов. ---
+\newblock 2011.
+
+\bibitem{stempcovsky}
+\selectlanguageifdefined{english}
+\BibEmph{Стемпковский,~АЛ}. Основы логического
+  синтеза средствами САПР Synopsys с
+  использованием Verilog HDL: учеб. пособие~/
+  АЛ~Стемпковский, МЮ~Семенов~// \BibEmph{М.:
+  МИЭТ}. ---
+\newblock 2005.
+
 \end{thebibliography}

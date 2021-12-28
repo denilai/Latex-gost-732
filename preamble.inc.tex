@@ -1,16 +1,16 @@
-%%==========================================%%
-%% Для избежания переносов слов
-\usepackage{ragged2e}
-\usepackage{microtype}
-\usepackage{setspace}
-%\полуторный интервал
-\onehalfspacing
-\justifying
-\sloppy
-\tolerance=500
-\hyphenpenalty=10000
-\emergencystretch=3em
-%%==========================================%%
+%%%==========================================%%
+%%% Для избежания переносов слов
+%\usepackage{ragged2e}
+%\usepackage{microtype}
+%\usepackage{setspace}
+%%\полуторный интервал
+%\onehalfspacing
+%\justifying
+%\sloppy
+%\tolerance=500
+%\hyphenpenalty=10000
+%\emergencystretch=3em
+%%%==========================================%%
 
 % Настройки стиля ГОСТ 7-32
 % Для начала определяем, хотим мы или нет, чтобы рисунки и таблицы нумеровались в пределах раздела, или нам нужна сквозная нумерация.
@@ -35,8 +35,25 @@ citecolor=black, menucolor=black, filecolor=black,
 
 \usepackage{etoolbox}
 
+%подсчет сущностей
+\newcounter{totfigures}
+\newcounter{tottables}
+\newcounter{totreferences}
+\pretocmd{\bibitem}{\addtocounter{totreferences}{1}}{}{}
+\pretocmd{\chapter}{\addtocounter{totfigures}{\value{figure}}}{}{}
+\pretocmd{\chapter}{\addtocounter{tottables}{\value{table}}}{}{}
 
-
+\makeatletter
+\AtEndDocument{%
+	\addtocounter{totfigures}{\value{figure}}%
+	\addtocounter{tottables}{\value{table}}%
+	\immediate\write\@mainaux{%
+		\string\gdef\string\totfig{\number\value{totfigures}}%
+		\string\gdef\string\tottab{\number\value{tottables}}% 
+		\string\gdef\string\totref{\number\value{totreferences}}%   
+	}%
+}
+\makeatother
 
 
 
