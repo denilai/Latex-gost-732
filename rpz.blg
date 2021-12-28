@@ -6,6 +6,7 @@ A level-1 auxiliary file: course-scheme/abbrev.aux
 A level-1 auxiliary file: course-scheme/intro.aux
 A level-1 auxiliary file: course-scheme/analiz-syncro.aux
 A level-1 auxiliary file: course-scheme/struct-design.aux
+A level-1 auxiliary file: course-scheme/11-release.aux
 A level-1 auxiliary file: 80-conclusion.aux
 A level-1 auxiliary file: course-scheme/81-biblio.aux
 The style file: gost780u.bst
@@ -13,7 +14,7 @@ Database file #1: course-scheme/rpz.bib
 Warning--empty journal in tarasov2011
 You've used 6 entries,
             2674 wiz_defined-function locations,
-            683 strings with 6968 characters,
+            684 strings with 6996 characters,
 and the built_in function-call counts, 2031 in all, are:
 = -- 282
 > -- 36
