@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{}
 \def\selectlanguageifdefined#1{
 \expandafter\ifx\csname date#1\endcsname\relax
 \else\language\csname l@#1\endcsname\fi}
@@ -6,62 +6,5 @@
 \ifx\undefined\BibUrl\def\BibUrl#1{\url{#1}}\else\fi
 \ifx\undefined\BibAnnote\long\def\BibAnnote#1{}\else\fi
 \ifx\undefined\BibEmph\def\BibEmph#1{\emph{#1}}\else\fi
-
-\bibitem{goncharovskyMaj}
-\selectlanguageifdefined{russian}
-\BibEmph{Гончаровский,~Олег~Владленович}.
-  МАЖОРИТАРНАЯ СХЕМА С НЕСКОЛЬКИМИ
-  ДОМЕНАМИ СИНХРОНИЗАЦИИ~/
-  Олег~Владленович~Гончаровский,
-  Сергей~Феофентович~Тюрин~// \BibEmph{Вестник
-  Воронежского государственного
-  университета. Серия: Системный анализ и
-  информационные технологии}. ---
-\newblock 2017. ---
-\newblock {№}~2. ---
-\newblock {С.}~57--60.
-
-\bibitem{ushenina}
-\selectlanguageifdefined{russian}
-\BibEmph{Ушенина,~Инна}. Использование
-  временных ограничений PERIOD и OFFSET при
-  проектировании цифровых устройств на
-  ПЛИС фирмы Xilinx~/ Инна~Ушенина~//
-  \BibEmph{Компоненты и технологии}. ---
-\newblock 2013. ---
-\newblock {№}~5. ---
-\newblock {С.}~97--106.
-
-\bibitem{hata2012fpga}
-\selectlanguageifdefined{english}
-\BibEmph{Hata,~Hisashi}. FPGA implementation of metastability-based true random
-  number generator~/ Hisashi~Hata, Shuichi~Ichikawa~// \BibEmph{IEICE
-  TRANSACTIONS on Information and Systems}. ---
-\newblock 2012. ---
-\newblock Vol.~95, no.~2. ---
-\newblock Pp.~426--436.
-
-\bibitem{cummings2002simulation}
-\selectlanguageifdefined{english}
-\BibEmph{Cummings,~Clifford~E}. Simulation and synthesis techniques for
-  asynchronous FIFO design~/ Clifford~E~Cummings~// SNUG 2002 (Synopsys Users
-  Group Conference, San Jose, CA, 2002) User Papers. ---
-\newblock 2002.
-
-\bibitem{tarasov2011}
-\selectlanguageifdefined{russian}
-\BibEmph{Тарасов,~Илья~Евгеньевич}. Язык
-  описания аппаратуры Verilog~/
-  Илья~Евгеньевич~Тарасов. ---
-\newblock 2011.
-
-\bibitem{stempcovsky}
-\selectlanguageifdefined{english}
-\BibEmph{Стемпковский,~АЛ}. Основы логического
-  синтеза средствами САПР Synopsys с
-  использованием Verilog HDL: учеб. пособие~/
-  АЛ~Стемпковский, МЮ~Семенов~// \BibEmph{М.:
-  МИЭТ}. ---
-\newblock 2005.
 
 \end{thebibliography}

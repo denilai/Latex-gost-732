@@ -39,6 +39,7 @@ citecolor=black, menucolor=black, filecolor=black,
 \newcounter{totfigures}
 \newcounter{tottables}
 \newcounter{totreferences}
+\newcounter{totappendix}
 \pretocmd{\bibitem}{\addtocounter{totreferences}{1}}{}{}
 \pretocmd{\chapter}{\addtocounter{totfigures}{\value{figure}}}{}{}
 \pretocmd{\chapter}{\addtocounter{tottables}{\value{table}}}{}{}

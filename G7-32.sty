@@ -28,7 +28,7 @@
 \addto\captionsrussian{%содержание
  \def\contentsname{%
   %\CYRS\cyro\cyrd\cyre\cyrr\cyrzh\cyra\cyrn\cyri\cyre}%
-  \centering\CYRS\CYRO\CYRD\CYRE\CYRR\CYRZH\CYRA\CYRN\CYRI\CYRE}%
+  \hspace{-12.5mm}\centering\CYRS\CYRO\CYRD\CYRE\CYRR\CYRZH\CYRA\CYRN\CYRI\CYRE}%
 }
 \newenvironment{abstract}{%То же самое, только как у белых людей -- Коротков И.
  \chapter*{АННОТАЦИЯ}%
@@ -71,6 +71,11 @@
 \newcommand\Conclusion{%заключение
 	\chapter{ЗАКЛЮЧЕНИЕ}%
 }
+
+\newcommand\pril{%заключение
+	\chapter{\centeringПРИЛОЖЕНИЯ}%
+}
+
 \addto\captionsrussian{%список использованных источников
  \def\bibname{%
   \CYRS\cyrp\cyri\cyrs\cyro\cyrk~
