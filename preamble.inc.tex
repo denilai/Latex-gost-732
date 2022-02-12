@@ -27,6 +27,11 @@ citecolor=black, menucolor=black, filecolor=black,
 
 %Величина «красной строки»
 
+\makeatletter
+\renewcommand{\@oddfoot}{\hfil \small \arabic{page}\hfil}
+\renewcommand{\@evenfoot}{\hfil \small \arabic{page}\hfil}
+\makeatother
+
 
 \usepackage[tableposition=top,singlelinecheck=false]{caption}
 %\usepackage{subcaption}

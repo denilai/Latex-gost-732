@@ -323,6 +323,17 @@
 \newcommand\labelenumii{\theenumii.}
 \renewcommand\p@enumii{\theenumi}
 
+
+\renewenvironment{itemize}{
+	\begin{list}{\labelitemi}{
+			\setlength{\topsep}{0pt}
+			\setlength{\partopsep}{0pt}
+			\setlength{\parskip}{5pt}
+			\setlength{\itemsep}{0pt}
+			\setlength{\parsep}{0pt}
+		}
+	}{\end{list}}
+
 %  ссылка на нумерованное перечисление
 \newcommand\pref[2]{%
  \cyrp\cyre\cyrr\cyre\cyrch\cyri\cyrs\cyrl\cyre\cyrn\cyri\cyre~\ref{#2})~\ref{#1}}
