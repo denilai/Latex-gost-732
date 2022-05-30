@@ -1,0 +1,92 @@
+\begin{thebibliography}{10}
+\def\selectlanguageifdefined#1{
+\expandafter\ifx\csname date#1\endcsname\relax
+\else\language\csname l@#1\endcsname\fi}
+\ifx\undefined\url\def\url#1{{\small #1}}\else\fi
+\ifx\undefined\BibUrl\def\BibUrl#1{\url{#1}}\else\fi
+\ifx\undefined\BibAnnote\long\def\BibAnnote#1{}\else\fi
+\ifx\undefined\BibEmph\def\BibEmph#1{\emph{#1}}\else\fi
+
+\bibitem{1}
+\selectlanguageifdefined{english}
+\BibEmph{Зотов,~Валерий}. Проектирование
+  встраиваемых микропроцессорных систем на
+  основе ПЛИС фирмы Xilinx~/ Валерий~Зотов~//
+  \BibEmph{М.: Горячая линия--Телеком}. ---
+\newblock 2006.
+
+\bibitem{2}
+\selectlanguageifdefined{russian}
+\BibEmph{Ушенина,~Инна}. Использование
+  временных ограничений PERIOD и OFFSET при
+  проектировании цифровых устройств на
+  ПЛИС фирмы Xilinx~/ Инна~Ушенина~//
+  \BibEmph{Компоненты и технологии}. ---
+\newblock 2013. ---
+\newblock {№}~5. ---
+\newblock {С.}~97--106.
+
+\bibitem{3}
+\selectlanguageifdefined{english}
+\BibEmph{Patharkar,~Ankush~Suresh}. Performance analysis of synchronizer and
+  measurement of metastability~/ Ankush~Suresh~Patharkar~// 2015 International
+  Conference on Computing Communication Control and Automation~/ IEEE. ---
+\newblock 2015. ---
+\newblock Pp.~494--498.
+
+\bibitem{4}
+\selectlanguageifdefined{english}
+\BibEmph{Cummings,~Clifford~E}. Simulation and synthesis techniques for
+  asynchronous FIFO design~/ Clifford~E~Cummings~// SNUG 2002 (Synopsys Users
+  Group Conference, San Jose, CA, 2002) User Papers. ---
+\newblock 2002.
+
+\bibitem{5}
+\selectlanguageifdefined{russian}
+\BibEmph{Тарасов,~Илья~Евгеньевич}. Язык
+  описания аппаратуры Verilog~/
+  Илья~Евгеньевич~Тарасов. ---
+\newblock 2011.
+
+\bibitem{6}
+\selectlanguageifdefined{english}
+\BibEmph{Попов,~АЮ}. Проектирование цифровых
+  устройств с использованием ПЛИС~/
+  АЮ~Попов. ---
+\newblock 2009.
+
+\bibitem{7}
+\selectlanguageifdefined{english}
+\BibEmph{Кузелин,~Михаил}. ПЛИС фирмы Xilinx:
+  семейство SpartanTM-II~/ Михаил~Кузелин~//
+  \BibEmph{Компоненты и технологии}. ---
+\newblock 2001. ---
+\newblock no.~12. ---
+\newblock Pp.~84--86.
+
+\bibitem{8}
+\selectlanguageifdefined{english}
+\BibEmph{Том,~Леклидер}. Погружаясь в ПЛИС~/
+  Леклидер~Том~// \BibEmph{Компоненты и
+  технологии}. ---
+\newblock 2006. ---
+\newblock no.~65. ---
+\newblock Pp.~56--60.
+
+\bibitem{9}
+\selectlanguageifdefined{english}
+\BibEmph{Стемпковский,~АЛ}. Основы логического
+  синтеза средствами САПР Synopsys с
+  использованием Verilog HDL: учеб. пособие~/
+  АЛ~Стемпковский, МЮ~Семенов~// \BibEmph{М.:
+  МИЭТ}. ---
+\newblock 2005.
+
+\bibitem{10}
+\selectlanguageifdefined{russian}
+\BibEmph{Харрис,~Дэвид}. Цифровая схемотехника
+  и архитектура компьютера~/ Дэвид~Харрис,
+  Сара~Харрис. ---
+\newblock Litres, 2021.
+
+\end{thebibliography}

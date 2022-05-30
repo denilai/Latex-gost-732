@@ -1,0 +1,89 @@
+%% Преамбула TeX-файла
+
+% 1. Стиль и язык
+\documentclass[utf8x]{G7-32} % Стиль (по умолчанию будет 14pt)
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\setcounter{page}{4}
+% Остальные стандартные настройки убраны в preamble.inc.tex.
+\include{preamble.inc}
+
+\newcommand{\pathToCommonFolder}{/home/denilai/Documents/repos/latex/scripts}
+
+% Настройки листингов.
+\include{listings.inc}
+
+% Полезные макросы листингов.
+\include{macros.inc}
+
+\renewcommand{\rmdefault}{ftm}
+
+\begin{document}
+
+
+ % выключает нумерацию ВСЕГО; здесь начинаются ненумерованные главы: реферат, введение, глоссарий, сокращения и прочее.
+
+% Команды \breakingbeforechapters и \nonbreakingbeforechapters
+% управляют разрывом страницы перед главами.
+% По-умолчанию страница разрывается.
+
+% \nobreakingbeforechapters
+% \breakingbeforechapters
+
+%\include{00-abstract}
+\thispagestyle{empty}
+\include{course-plis/00-abstract}
+\thispagestyle{empty}
+\tableofcontents
+\frontmatter
+
+%\include{10-defines}
+\include{course-plis/abbrev}
+
+\include{course-plis/intro}
+
+\mainmatter % это включает нумерацию глав и секций в документе ниже
+
+\include{course-plis/lab1}
+\clearpage
+\include{course-plis/lab2}
+\clearpage
+\include{course-plis/lab3}
+\clearpage
+\include{course-plis/lab4}
+\clearpage
+\include{course-plis/lab5}
+\clearpage
+
+%\cite{d2004mysql},\cite{baldinLatex}, \cite{converse2004php5}, \cite{yurt2011dev}.
+
+\backmatter %% Здесь заканчивается нумерованная часть документа и начинаются ссылки и
+            %% заключение
+
+\include{80-conclusion}
+
+\include{course-plis/81-biblio}
+
+%\cite{tarasov2011},\cite{goncharovskyMaj}. \cite{ushenina}.\cite{hata2012fpga}, \cite{cummings2002simulation},, \cite{stempcovsky},\cite{harris}
+
+
+\appendix   % Тут идут приложения
+%\setcounter{page}{24}
+%
+\include{course-plis/appendix1}
+\clearpage
+\include{course-plis/appendix2}
+\clearpage
+%\include{course-plis/appendix3}
+%\clearpage
+%\include{91-appendix2}
+
+
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
